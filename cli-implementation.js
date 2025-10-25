@@ -90,7 +90,7 @@ function PushToDokku(giturl, tempDir) {
   execTemp("git add .");
   execTemp('git commit -am "Deploy"');
   execTemp(`git remote add ${remoteBranch} ${giturl}`);
-  execTemp(`git push -f ${remoteBranch} master`);
+  execTemp(`git push -f ${remoteBranch} main`);
 }
 
 function HandleNormalStaticServer(tempDir) {
